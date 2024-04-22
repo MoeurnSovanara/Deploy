@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big-box{
+            width: 100%;
+            height: 96vh;
+            border: 1px solid black;
+        }
+        .box-on{
+            border: 1px solid black;
+            width: 100%;
+            height: 33%;
+            display: flex;
+        }
+        .box-on .box1{
+            border: 1px solid black;
+            width: 25%;
+            height: 100%;
+            display: flex;
+        }
+        .box1 .pic{
+            width: 80%;
+            height: 100%;
+            background-color: rgb(71, 140, 110);
+        }
+        .box1 .text{
+            width: 20%;
+            height: 100%;
+            background-color: rgb(176, 243, 243);
+        }
+        .text p,h1{
+            float: right;
+        }
+        .box-on .box2{
+            border: 1px solid black;
+            width: 25%;
+            height: 100%;
+            display: flex;
+            background-color: rgb(128, 198, 198);
+        }
+        .box2 .pic{
+            background-color: rgb(5, 83, 60);
+            width: 60%;
+            height: 100%;
+            margin-left: 40px;
+        }
+        .box2 .text{
+            width: 30%;
+            height: 100%;
+            /* border: 1px solid black; */
+        }
+        .box-on .box3{
+            width: 25%;
+            height: 100%;
+            background-color:rgb(128, 198, 198) ;
+            border: 1px solid black;
+        }
+        .box3 .pic{
+            width: 85%;
+            height: 75%;
+            background-color: rgb(5, 83, 60);
+        }
+        .box3 p{
+            margin-left: 10px;
+        }
+        .box-on .box4{
+            width: 25%;
+            height: 100%;
+            background-color:rgb(128, 198, 198) ;
+            border: 1px solid black;
+            display:flex;
+        }
+        .box4 .pic1{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(5, 83, 60);
+        }
+        .box4 .pic2{
+            width:50%;
+            height: 100%;
+            background-color:rgb(128, 198, 198) ;
+        }
+        .pic2 .text1{
+            width: 95%;
+            height: 40%;
+            background-color: rgb(5, 83, 60);
+            margin-left: 10px;
+        }
+        .pic2 .text2{
+            margin-left: 10px;
+        }
+        .box-center{
+            width: 100%;
+            height: 33%;
+            border: 1px solid black;
+            display: flex;
+        }
+        .box-center .box1{
+            border: 1px solid black;
+            width: 25%;
+            height: 100%;
+            background-color:rgb(128, 198, 198) ;
+            display: flex;
+        }
+        .box-center .box1 .left{
+            width: 50%;
+            height: 100%;
+        }
+        .box-center .left .pic{
+            margin-top: 15px;
+            margin-left: 30px;
+            width: 80%;
+            height: 60%;
+            background-color: rgb(5, 83, 60);
+        }
+        .box-center .box1 .right{
+            width: 50%;
+            height: 100%;
+        }
+        .box-center .box1 .right .pic{
+            margin-top: 15px;
+            margin-left: 5px;
+            width: 80%;
+            height: 60%;
+            background-color: rgb(5, 83, 60);
+        }
+        .box-center .box2{
+            border: 1px solid black;
+            width: 25%;
+            height: 100%;
+            background-color:rgb(128, 198, 198) ;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box2 .test{
+            width: 35%;
+            height: 80%;
+            background-color:rgb(5, 83, 60) ;
+            margin-top: 10px;
+
+        }
+        .box-center .box2 .list{
+            height: 80%;
+            width: 26%;
+        }
+        .box2 .list p{
+            float: right;
+        }
+        .box-center .box3{
+            width: 25%;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            background-color:rgb(128, 198, 198) ;
+        }
+        .box-center .box3 .left{
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid black; */
+        }
+        .box-center .box3 .left .left1{
+            background-color:rgb(5, 83, 60) ;
+            width: 95%;
+            height: 40%;
+            margin-top: 7px;
+            margin-left: 5px;
+        }
+        .box-center .box3 .right{
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid black; */
+        }
+        .box-center .box3 .right .right1{
+            background-color:rgb(5, 83, 60) ;
+            width: 95%;
+            height: 40%;
+            margin-top: 7px;
+            margin-left: 5px;
+        }
+        .box3 .right p{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-box">
+        <div class="box-on">
+            <div class="box1">
+                <div class="pic"></div>
+                <div class="text">
+                    <h1>Title</h1>
+                    <p>
+                        text text <br>
+                        text text <br>
+                        text text <br>
+                    </p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="pic"></div>
+                <div class="text">
+                    <h1>Title</h1>
+                    <p>
+                        text text <br>
+                        text text <br>
+                        text text <br>
+                    </p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="pic"></div>
+                <p>
+                    Title <br>
+                    text text
+                    text text 
+                    text text 
+                </p>
+            </div>
+            <div class="box4">
+                <div class="pic1"></div>
+                <div class="pic2">
+                    <div class="text1"></div>
+                    <br>
+                    <div class="text2">
+                        <p>
+                            Title <br>
+                            text text <br>
+                            text text <br>
+                            text text <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-center">
+            <div class="box1">
+                <div class="left">
+                    <div class="pic"></div>
+                </div>
+                <div class="right">
+                    <div class="pic"></div>
+                        <p>
+                            Title <br>
+                            text text
+                            text text 
+                            text text 
+                        </p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="test"></div>
+                <div class="test"></div>
+                <div class="list">
+                    <p>
+                        Title <br>
+                        text text <br>
+                        text text <br>
+                        text text <br>
+                    </p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="left">
+                    <div class="left1"></div>
+                    <div class="left1"></div>
+                </div>
+                <div class="right">
+                    <div class="right1"></div>
+                    <p>
+                        Title <br>
+                        text text <br>
+                        text text <br>
+                        text text <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
